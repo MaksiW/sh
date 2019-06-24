@@ -2,9 +2,9 @@
  
 cd /home/opt/BitShark/bch
 # Check run proccess
-if ! pgrep -f "from_blockchain_into_redis.py" > /dev/null
+if ! pgrep -f "Example.py" > /dev/null
 then
     echo "[!] Start new proccess"
     cd /home/opt/BitShark/bch/
-    python ./from_blockchain_into_redis.py > /dev/null &
+    python ./Example.py > /dev/null &
 fi
